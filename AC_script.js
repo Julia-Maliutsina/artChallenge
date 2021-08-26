@@ -326,7 +326,7 @@ function pageLoad () {
         document.addEventListener('keyup', function whichKey(EO) {
         if (event.key=='ArrowLeft') prevSlide();
         if (event.key=='ArrowRight') nextSlide();
-        if (event.key=='Escape') goToFirstPage();
+        if (event.key=='Escape') switchToMainPage();
         if (event.key=='1') {          
             let contents=document.getElementsByTagName('form');
             let cont=Math.abs(pos/document.querySelector('.wrapper').offsetWidth);
