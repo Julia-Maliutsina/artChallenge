@@ -30,7 +30,7 @@
   }
   .main_section_mix span {
     position: absolute;        
-    top: 46px;
+    top: 50px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     padding: 0px;
@@ -42,7 +42,7 @@
   }
   #LONGNAME {
     position: absolute;        
-    top: 35px; 
+    top: 50px; 
   }
   .main_section {
     vertical-align: middle;
@@ -66,7 +66,7 @@
   }
   .main_section span {
     position: absolute;        
-    top: 46px;
+    top: 50px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     padding: 0px;
