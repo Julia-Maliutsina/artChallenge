@@ -108,12 +108,13 @@ switchToStateFromURLHash();
 
 var answeredPics=0; // количество ответов
 function pageLoad () {
-    if (page=='main') {
-
-        try {
+ 
+    try {
         document.getElementById('RESULT').style.display='none';
-        }
-        catch(err){};
+    }
+    catch(err){};
+  
+    if (page=='main') {
 
         try {
             clearTimeout(timer);
@@ -168,11 +169,6 @@ function pageLoad () {
 
     else {
     
-        try {
-            document.getElementById('RESULT').style.display='none';
-        }
-        catch(err){};
-
         try {
             clearTimeout(timer);
         } 
