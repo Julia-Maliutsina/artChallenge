@@ -91,7 +91,13 @@ function switchToStateFromURLHash() {
 function switchToState(newState) {
   if (answeredPics>0 && answeredPics<10) {
     var changeHash = confirm("При переходе результат игры будет потерян!");
-    if (changeHash) location.hash=newState;
+    if (changeHash) {
+      try {
+        document.getElementById('RESULT').style.display='none';
+      }
+      catch(err){};
+      location.hash=newState;
+    }
   }
   else location.hash=newState;
 }
@@ -109,10 +115,7 @@ switchToStateFromURLHash();
 var answeredPics=0; // количество ответов
 function pageLoad () {
  
-    try {
-        document.getElementById('RESULT').style.display='none';
-    }
-    catch(err){};
+
   
     if (page=='main') {
 
